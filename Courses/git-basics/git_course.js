@@ -18,7 +18,9 @@ git config --global user.email youremail@example.com //сменить имейл
 9. шлем камит в RR 'git push origin Courses' //Courses это ветка на RR куда будем лить
 
 Common
-'git fetch' // выкачивает из RR в LR все ветки (если добавили на RR новую ветку а LR об этом еще не знает)
+'git fetch' // загружает последние изменения с RR, но не вносит их в ваши текущие файлы или ветки на LR
+'git pull origin Courses' //(это комбинация двух команд: git fetch + git merge) выкачать из RR в LR какую то конкретную ветку
+'git merge' // обьеденить изменния из RR с теми что вы сделали на LR
 
 
 

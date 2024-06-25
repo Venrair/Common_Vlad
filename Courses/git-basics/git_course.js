@@ -20,12 +20,6 @@ git config --global user.email youremail@example.com //сменить имейл
 Common
 'git fetch' // выкачивает из RR в LR все ветки (если добавили на RR новую ветку а LR об этом еще не знает)
 
-
-
-
-
-
-
 'BRANCH'
 
 local
@@ -42,5 +36,3 @@ git checkout -b <branch-name> // Создание и переключение н
 //delete
 git branch -d <branch-name> //Удаление локальной ветки
 git branch -D <branch-name> //Принудительное удаление локальной ветки
-
-Remote

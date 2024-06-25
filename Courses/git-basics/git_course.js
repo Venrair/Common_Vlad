@@ -22,12 +22,6 @@ Common
 'git pull origin Courses' //(это комбинация двух команд: git fetch + git merge) выкачать из RR в LR какую то конкретную ветку
 'git merge' // обьеденить изменния из RR с теми что вы сделали на LR
 
-
-
-
-
-
-
 'BRANCH'
 
 local
@@ -44,5 +38,3 @@ git checkout -b <branch-name> // Создание и переключение н
 //delete
 git branch -d <branch-name> //Удаление локальной ветки
 git branch -D <branch-name> //Принудительное удаление локальной ветки
-
-Remote

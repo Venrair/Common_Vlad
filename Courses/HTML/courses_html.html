@@ -178,26 +178,77 @@ ol нумерация
 <!-- ФОРМА ВВОДА -->
 <form action="/search">
     // Данные, после заполнения, будут отправлены на страницу /search
+
+    //type: 
+    text --- однострочное поле вводе
+    password --- поле для пороля где при вводе символы скрываются
+    checkbox
+    radio
+    select --- дропдаун
+    email
+    number
+    search
+    tel
+    url
+
   </form>
   <!-- поле ввода -Текст -->
   <form>
     <input type="text">
   </form>
-  <!-- имя поля ввода -->
+
+  <!-- имя поля ввода V1-->
   <form>
     <label>Введите имя
       <input type="text">
     </label>
   </form>
+
+  <!-- имя поля ввода V2-->
+  <form>
+    <label for="name">Введите имя</label>
+    <input type="text" id="name">
+  </form>
+
   <!-- плэйсхолдер -->
   <form>
     <label>Введите имя
       <input type="text" placeholder="Вася Пупкин">
     </label>
   </form>
+
   <!-- пароли(что бы скрыть вводимые данные) -->
    <form>
     <label>Пин
     <input type="password">
       </label>
    </form>
+
+   <!-- чекбокс -->
+   <form>
+    <label>Хочу изучать HTML
+      <input type="checkbox" name="languages" value="HTML">             //name = для определения конкретной группы чекбоксов    //value что бы при отправке на сервер понять что было выбрано
+    </label>
+    <label>Хочу изучать CSS
+      <input type="checkbox" name="languages" value="CSS"> 
+    </label>
+    <label>Хочу изучать JS
+      <input type="checkbox" name="languages" value="JS">
+    </label>
+  </form>
+
+  <!-- радиобаттн -->
+  <form action="/people">
+    <label>Самовывоз
+         <input type="radio" name="delivery" value="Самовывоз">
+        </label>
+    <label>Курьер
+         <input type="radio" name="delivery" value="Курьер">
+        </label>
+  </form>
+  
+  <!-- текс эрия -->
+  <form>
+    <textarea rows="5" cols="30">textarea с 5 строками и 30 столбцами</textarea>
+  </form>
+  

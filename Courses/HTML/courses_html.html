@@ -175,12 +175,19 @@ ol нумерация
    <meta name="viewport" content="width=980, initial-scale=1.0, user-scalable=no">
 
 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 <!-- ФОРМА ВВОДА -->
 <form action="/search">
     // Данные, после заполнения, будут отправлены на страницу /search
 
     //type: 
     text --- однострочное поле вводе
+    textarea --- многосточное, настраиваемое по размерам поле (как для каментов)
     password --- поле для пороля где при вводе символы скрываются
     checkbox
     radio
@@ -246,9 +253,83 @@ ol нумерация
          <input type="radio" name="delivery" value="Курьер">
         </label>
   </form>
-  
-  <!-- текс эрия -->
+
+  <!-- текс эрия, типо для камента-->
   <form>
     <textarea rows="5" cols="30">textarea с 5 строками и 30 столбцами</textarea>
   </form>
   
+  <!-- дропдаун -->
+  <form>
+    <select multiple>                                  //multiple атрибут позволяющий выбрать несколько, если убрать то можно выбрать только 1
+        <option disabled>Выберите курсы</option>       //disabled не позволяет выбрать этот пункт, используют в качестве заголовка
+        <option>JS</option>
+      <option>PHP</option>
+      <option>Java</option>
+    </select>
+  </form>
+
+  <!-- button -->
+  <form>
+    <button>Отправить</button>
+  </form>
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!-- Семантические элементы -->
+    
+    <header>
+    <main>
+    <footer>
+
+    <nav> -- меню навигации по сайту
+    <section> -- разделять контент в main
+    <article> -- секция которая может быть использована самостоятельно и не привязана структурно к конкретной странице (курс валют, погода, превью новостей)
+    <aside> -- бокавая панель
+
+  <!-- nav --> //обозначает меню навигации
+  <header>
+    <img src="#" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<header>
+    <img src="#" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Fdff</h2>
+        <article>
+            <h3>123</h3>
+        </article>
+                <article>
+            <h3>456</h3>
+        </article>
+    </section>
+
+</main>
+    <aside>
+       123 
+    </aside>
+
+<!-- HTML: Микроразметка -->
+<section itemscope itemtype="http://schema.org/Organization">
+    <h1 itemprop="name">Компания «Прауд»</h1>
+    <p>Адрес: <span itemprop="address">г.Мотино, улица Строителей, дом 6</span></p>
+    <p>Телефон: <span itemprop="telephone">8 (8765) 333-00-00</span></p>
+    <p>Email: <span itemprop="email">info@proud-company.test</span></p>
+  </section>
